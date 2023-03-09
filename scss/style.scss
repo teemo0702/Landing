@@ -66,11 +66,11 @@ body {
 
 .form {
   &-group {
-    @apply flex flex-col;
+    @apply flex flex-col relative;
   }
 
   &-control {
-    @apply bg-transparent	;
+    @apply bg-transparent px-[4px];
     border-bottom: 1px solid #D1D9DD;
   }
 
@@ -81,8 +81,22 @@ body {
 
 }
 
+select:focus-visible {
+  @apply outline-0;
+}
+
 input:focus-visible {
   @apply outline-0;
+}
+
+.invalid {
+  .form-control {
+    border-bottom: 1px solid #FF0000;
+  }
+
+  .form-message {
+    @apply absolute bottom-[-20px] text-[#ff0000] text-[12px] leading-[16px];
+  }
 }
 
 textarea:focus-visible {
