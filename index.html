@@ -1,206 +1,209 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="scss/style.scss" />
+</head>
 
-    <title>Tailwind CSS Boilerplate</title>
+<body class="">
+<div class="h-full">
+  <div class="content-logo">
+    <div class="mr-[48px]">
+      <img src="../src/img/lg_lifesup.png" alt="">
+    </div>
+    <div>
+      <img src="../src/img/lg_trademark.png" alt="">
+    </div>
+  </div>
 
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="scss/style.scss" />
-
-<!--    <script type="text/javascript" src="js/validator.js"></script>-->
-<!--    <script type="text/typescript" src="./ts/index.ts"></script>-->
-<!--    <script type="text/javascript" src="https://raw.githubusercontent.com/niutech/typescript-compile/gh-pages/js/typescript.min.js"></script>-->
-<!--    <script type="text/javascript" src="https://raw.githubusercontent.com/niutech/typescript-compile/gh-pages/js/typescript.compile.min.js"></script>-->
-  </head>
-
-  <body class="">
-    <div class="h-full">
-      <div class="content-logo">
+  <div class="px-[96px] py-[56px]">
+    <div id="header">
+      <div class="flex">
         <div class="mr-[48px]">
-          <img src="../src/img/lg_lifesup.png" alt="">
+          <a href="https://lifesup.com.vn" title="Lifesup | Innovations for Life">
+            <img class="w-[240px] h-[72px] object-cover" src="../src/img/lg_lifesup.png" alt="">
+          </a>
         </div>
         <div>
-          <img src="../src/img/lg_trademark.png" alt="">
+          <img class="w-[72px] h-[72px] object-cover" src="../src/img/lg_trademark.png" alt="">
         </div>
       </div>
 
-      <div class="px-[96px] py-[56px]">
-        <div id="header">
-          <div class="flex">
-            <div class="mr-[48px]">
-              <a href="https://lifesup.com.vn" title="Lifesup | Innovations for Life">
-                <img class="w-[240px] h-[72px] object-cover" src="../src/img/lg_lifesup.png" alt="">
-              </a>
-            </div>
-            <div>
-              <img class="w-[72px] h-[72px] object-cover" src="../src/img/lg_trademark.png" alt="">
-            </div>
-          </div>
+      <div class="space-x-[32px] flex">
+        <p class="tab-item active" id="tab-about" onclick="changeTab('about')">About us</p>
+        <p class="tab-item" id="tab-contact" onclick="changeTab('contact')">Contact</p>
+      </div>
+    </div>
 
-          <div class="space-x-[32px] flex">
-            <p class="tab-item active" id="tab-about" onclick="changeTab('about')">About us</p>
-            <p class="tab-item" id="tab-contact" onclick="changeTab('contact')">Contact</p>
+    <div id="about">
+      <div class="space-x-[48px] flex">
+        <div>
+          <img class="w-[420px] h-[420px] object-cover" src="../src/img/img_1.png" alt="">
+        </div>
+        <div>
+          <img class="w-[420px] h-[420px] object-cover" src="../src/img/img_2.png" alt="">
+        </div>
+      </div>
+      <div class="flex flex-col items-center mt-[32px]">
+        <div class="text-white text-[24px] leading-[36px] mb-[12px] flex flex-col items-center">
+          <p>Meet us at Hannover Messe Expo 2023 “Hall 16, Stand E18”</p>
+          <p>“Vietnam Software and IT Services Association.”</p>
+        </div>
+        <button class="button-custom" onclick="changeTab('contact')">Join now</button>
+      </div>
+    </div>
+
+    <div id="contact">
+      <div class="contact-left text-white flex flex-col items-center space-y-[48px] mr-[245px]">
+        <div>
+          <p class="text-[48px] leading-[64px] font-bold">CONTACT</p>
+        </div>
+        <div class="flex flex-col items-center space-y-[40px]">
+          <div class="flex flex-col items-center">
+            <p class="contact-title">Website</p>
+            <a href="https://lifesup.com.vn" title="Lifesup | Innovations for Life" class="contact-link">https://lifesup.com.vn</a>
+          </div>
+          <div class="flex flex-col items-center">
+            <p class="contact-title">Facebook</p>
+            <a href="https://www.facebook.com/Lifesup.com.vn" title="Lifesup Technology co. ltd" class="contact-link">https://www.facebook.com/Lifesup.com.vn</a>
+          </div>
+          <!--              <div class="flex flex-col items-center">-->
+          <!--                <p class="contact-title">Youtube</p>-->
+          <!--                <p class="contact-link">https://www.youtube.com/@TagOnGlobal/featured</p>-->
+          <!--              </div>-->
+          <div class="flex flex-col items-center">
+            <p class="contact-title">Linkedin</p>
+            <a href="https://www.linkedin.com/company/lifesupcompany/" title="LIFESUP Technology" class="contact-link">https://www.linkedin.com/company/lifesupcompany/</a>
+          </div>
+          <div class="flex flex-col items-center">
+            <p class="contact-title">Email</p>
+            <p class="contact-value">admin@lifesup.com.vn</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <p class="contact-title">Phone</p>
+            <p class="contact-value">(+84) 942 817 259 <span class="font-medium mx-[8px]">&</span> (+84) 24 666 15197</p>
+          </div>
+          <div class="flex flex-col items-center">
+            <p class="contact-title">Address</p>
+            <p class="contact-value">MHDI Building, No. 60, Hoang Quoc Viet Street, Cau Giay District, Ha Noi City</p>
           </div>
         </div>
+      </div>
 
-        <div id="about">
-          <div class="space-x-[48px] flex">
+      <div class="contact-right w-[35%]">
+        <div class="px-[48px] py-[32px]" style="background: linear-gradient(127.51deg, #2D3643 17.44%, #171C26 85.85%); box-shadow: -4px 13px 19px 14px rgba(0, 0, 0, 0.2); border-radius: 4px;">
+          <form action="" class="text-white space-y-[24px]" id="form-contact">
             <div>
-              <img class="w-[420px] h-[420px] object-cover" src="../src/img/img_1.png" alt="">
+              <p class="text-[48px] leading-[64px] font-bold text-center">CONTACT FORM</p>
             </div>
-            <div>
-              <img class="w-[420px] h-[420px] object-cover" src="../src/img/img_2.png" alt="">
+            <div class="form-group">
+              <label for="name" class="form-label required">Your name</label>
+              <input id="name" name="your_name" type="text" class="form-control">
+              <span class="form-message"></span>
             </div>
-          </div>
-          <div class="flex flex-col items-center mt-[32px]">
-            <div class="text-white text-[24px] leading-[36px] mb-[12px] flex flex-col items-center">
-              <p>Meet us at Hannover Messe Expo 2023 “Hall 16, Stand E18”</p>
-              <p>“Vietnam Software and IT Services Association.”</p>
+            <div class="form-group">
+              <label for="company" class="form-label required">Your company</label>
+              <input id="company" name="your_company" type="text" class="form-control">
+              <span class="form-message"></span>
             </div>
-            <button class="button-custom" onclick="changeTab('contact')">Join now</button>
-          </div>
-        </div>
-
-        <div id="contact">
-          <div class="contact-left text-white flex flex-col items-center space-y-[48px] mr-[245px]">
-            <div>
-              <p class="text-[48px] leading-[64px] font-bold">CONTACT</p>
+            <div class="form-group">
+              <label for="industry" class="form-label">Industry</label>
+              <select id="industry" name="industry" class="form-control">
+                <option value=""></option>
+                <option value="Agriculture">Agriculture</option>
+                <option value="Robotic">Robotic</option>
+                <option value="Automobile">Automobile</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Finance">Finance</option>
+              </select>
+              <span class="form-message"></span>
             </div>
-            <div class="flex flex-col items-center space-y-[40px]">
-              <div class="flex flex-col items-center">
-                <p class="contact-title">Website</p>
-                <a href="https://lifesup.com.vn" title="Lifesup | Innovations for Life" class="contact-link">https://lifesup.com.vn</a>
-              </div>
-              <div class="flex flex-col items-center">
-                <p class="contact-title">Facebook</p>
-                <a href="https://www.facebook.com/Lifesup.com.vn" title="Lifesup Technology co. ltd" class="contact-link">https://www.facebook.com/Lifesup.com.vn</a>
-              </div>
-<!--              <div class="flex flex-col items-center">-->
-<!--                <p class="contact-title">Youtube</p>-->
-<!--                <p class="contact-link">https://www.youtube.com/@TagOnGlobal/featured</p>-->
-<!--              </div>-->
-              <div class="flex flex-col items-center">
-                <p class="contact-title">Linkedin</p>
-                <a href="https://www.linkedin.com/company/lifesupcompany/" title="LIFESUP Technology" class="contact-link">https://www.linkedin.com/company/lifesupcompany/</a>
-              </div>
-              <div class="flex flex-col items-center">
-                <p class="contact-title">Email</p>
-                <p class="contact-value">admin@lifesup.com.vn</p>
-              </div>
-              <div class="flex flex-col items-center">
-                <p class="contact-title">Phone</p>
-                <p class="contact-value">(+84) 942 817 259 <span class="font-medium mx-[8px]">&</span> (+84) 24 666 15197</p>
-              </div>
-              <div class="flex flex-col items-center">
-                <p class="contact-title">Address</p>
-                <p class="contact-value">MHDI Building, No. 60, Hoang Quoc Viet Street, Cau Giay District, Ha Noi City</p>
-              </div>
+            <div class="form-group">
+              <label for="email" class="form-label required">Email</label>
+              <input id="email" name="email" type="text" class="form-control">
+              <span class="form-message"></span>
             </div>
-          </div>
-
-          <div class="contact-right w-[35%]">
-            <div class="px-[48px] py-[32px]" style="background: linear-gradient(127.51deg, #2D3643 17.44%, #171C26 85.85%); box-shadow: -4px 13px 19px 14px rgba(0, 0, 0, 0.2); border-radius: 4px;">
-              <form action="" class="text-white space-y-[24px]" id="form-contact">
+            <div class="form-group">
+              <label for="phone" class="form-label required">Phone number</label>
+              <input id="phone" name="phone_number" type="text" class="form-control">
+              <span class="form-message"></span>
+            </div>
+            <div class="flex justify-between">
+              <div>
+                <input type="checkbox" name="is_attend" value="attend" checked class="form-control">
+                Attending Hannover Messe 2023
+              </div>
+              <div class="flex space-x-[16px]">
                 <div>
-                  <p class="text-[48px] leading-[64px] font-bold text-center">CONTACT FORM</p>
+                  <input type="radio" name="guest_type" value="visitor" checked class="form-control">
+                  Visitor
                 </div>
-                <div class="form-group">
-                  <label for="name" class="form-label required">Your name</label>
-                  <input id="name" name="name" type="text" class="form-control">
-                  <span class="form-message"></span>
+                <div>
+                  <input type="radio" name="guest_type" value="exhibitor" class="form-control">
+                  Exhibitor
                 </div>
-                <div class="form-group">
-                  <label for="company" class="form-label required">Your company</label>
-                  <input id="company" name="company" type="text" class="form-control">
-                  <span class="form-message"></span>
-                </div>
-                <div class="form-group">
-                  <label for="industry" class="form-label">Industry</label>
-                  <input id="industry" name="industry" type="text" class="form-control">
-                  <span class="form-message"></span>
-                </div>
-                <div class="form-group">
-                  <label for="email" class="form-label required">Email</label>
-                  <input id="email" name="email" type="text" class="form-control">
-                  <span class="form-message"></span>
-                </div>
-                <div class="form-group">
-                  <label for="phone" class="form-label required">Phone number</label>
-                  <input id="phone" name="phone" type="text" class="form-control">
-                  <span class="form-message"></span>
-                </div>
-                <div class="flex justify-between">
-                  <div>
-                    <input type="checkbox" id="attend" name="attend" value="attend">
-                    <label for="attend">Attending Hannover Messe 2023</label>
-                  </div>
-                  <div class="flex space-x-[16px]">
-                    <div>
-                      <input type="radio" id="visitor" name="join" value="visitor">
-                      <label for="visitor">Visitor</label>
-                    </div>
-                    <div>
-                      <input type="radio" id="exhibitor" name="join" value="exhibitor">
-                      <label for="exhibitor">Exhibitor</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="message" class="form-label">Message</label>
-                  <textarea name="message" id="message" rows="3" class="form-textarea"></textarea>
-                </div>
-              </form>
-              <div class="flex justify-center mt-[64px]">
-                <button class="button-custom" onclick="changeTab('success')" disabled>Submit</button>
               </div>
             </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" rows="3" class="form-textarea"></textarea>
+            </div>
+            <div class="flex justify-center">
+              <button class="button-custom">Submit</button>
+            </div>
+          </form>
+<!--          <div class="flex justify-center mt-[64px]">-->
+<!--            <button class="button-custom">Submit</button>-->
+<!--          </div>-->
+        </div>
+      </div>
+    </div>
+
+    <div id="success">
+      <div>
+        <svg width="144" height="144" viewBox="0 0 144 144" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M72 12C38.94 12 12 38.94 12 72C12 105.06 38.94 132 72 132C105.06 132 132 105.06 132 72C132 38.94 105.06 12 72 12ZM100.68 58.2L66.66 92.22C65.82 93.06 64.68 93.54 63.48 93.54C62.28 93.54 61.14 93.06 60.3 92.22L43.32 75.24C41.58 73.5 41.58 70.62 43.32 68.88C45.06 67.14 47.94 67.14 49.68 68.88L63.48 82.68L94.32 51.84C96.06 50.1 98.94 50.1 100.68 51.84C102.42 53.58 102.42 56.4 100.68 58.2Z" fill="#49DD7B"/>
+          <path d="M72 12C38.94 12 12 38.94 12 72C12 105.06 38.94 132 72 132C105.06 132 132 105.06 132 72C132 38.94 105.06 12 72 12ZM100.68 58.2L66.66 92.22C65.82 93.06 64.68 93.54 63.48 93.54C62.28 93.54 61.14 93.06 60.3 92.22L43.32 75.24C41.58 73.5 41.58 70.62 43.32 68.88C45.06 67.14 47.94 67.14 49.68 68.88L63.48 82.68L94.32 51.84C96.06 50.1 98.94 50.1 100.68 51.84C102.42 53.58 102.42 56.4 100.68 58.2Z" fill="url(#paint0_linear_32635_4484)"/>
+          <defs>
+            <linearGradient id="paint0_linear_32635_4484" x1="12" y1="12" x2="156.658" y2="77.7454" gradientUnits="userSpaceOnUse">
+              <stop offset="0.0001" stop-color="#1CA2D0"/>
+              <stop offset="1" stop-color="#2764C7"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="flex flex-col items-center text-white">
+        <p class="text-[48px] leading-[64px] font-bold mb-[4px]">THANK YOU</p>
+        <p>Your submission has been sent</p>
+        <p>We will contact you soon</p>
+      </div>
+      <div class="space-x-[24px] flex">
+        <div class="relative">
+          <img class="w-[240px] h-[220px] object-cover rounded-[4px]" src="../src/img/img_2.png" alt="">
+          <div class="absolute left-[16px] bottom-[8px] p-[8px] rounded-[8px]">
+            <p class="text-white">Website</p>
           </div>
         </div>
-
-        <div id="success">
-          <div>
-            <svg width="144" height="144" viewBox="0 0 144 144" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M72 12C38.94 12 12 38.94 12 72C12 105.06 38.94 132 72 132C105.06 132 132 105.06 132 72C132 38.94 105.06 12 72 12ZM100.68 58.2L66.66 92.22C65.82 93.06 64.68 93.54 63.48 93.54C62.28 93.54 61.14 93.06 60.3 92.22L43.32 75.24C41.58 73.5 41.58 70.62 43.32 68.88C45.06 67.14 47.94 67.14 49.68 68.88L63.48 82.68L94.32 51.84C96.06 50.1 98.94 50.1 100.68 51.84C102.42 53.58 102.42 56.4 100.68 58.2Z" fill="#49DD7B"/>
-              <path d="M72 12C38.94 12 12 38.94 12 72C12 105.06 38.94 132 72 132C105.06 132 132 105.06 132 72C132 38.94 105.06 12 72 12ZM100.68 58.2L66.66 92.22C65.82 93.06 64.68 93.54 63.48 93.54C62.28 93.54 61.14 93.06 60.3 92.22L43.32 75.24C41.58 73.5 41.58 70.62 43.32 68.88C45.06 67.14 47.94 67.14 49.68 68.88L63.48 82.68L94.32 51.84C96.06 50.1 98.94 50.1 100.68 51.84C102.42 53.58 102.42 56.4 100.68 58.2Z" fill="url(#paint0_linear_32635_4484)"/>
-              <defs>
-                <linearGradient id="paint0_linear_32635_4484" x1="12" y1="12" x2="156.658" y2="77.7454" gradientUnits="userSpaceOnUse">
-                  <stop offset="0.0001" stop-color="#1CA2D0"/>
-                  <stop offset="1" stop-color="#2764C7"/>
-                </linearGradient>
-              </defs>
-            </svg>
+        <div class="relative">
+          <img class="w-[240px] h-[220px] object-cover rounded-[4px]" src="../src/img/img_1.png" alt="">
+          <div class="absolute left-[16px] bottom-[8px] p-[8px] rounded-[8px]">
+            <p class="text-white">Website</p>
           </div>
-          <div class="flex flex-col items-center text-white">
-            <p class="text-[48px] leading-[64px] font-bold mb-[4px]">THANK YOU</p>
-            <p>Your submission has been sent</p>
-            <p>We will contact you soon</p>
-          </div>
-          <div class="space-x-[24px] flex">
-            <div class="relative">
-              <img class="w-[240px] h-[220px] object-cover rounded-[4px]" src="../src/img/img_2.png" alt="">
-              <div class="absolute left-[16px] bottom-[8px] p-[8px] rounded-[8px]">
-                <p class="text-white">Website</p>
-              </div>
-            </div>
-            <div class="relative">
-              <img class="w-[240px] h-[220px] object-cover rounded-[4px]" src="../src/img/img_1.png" alt="">
-              <div class="absolute left-[16px] bottom-[8px] p-[8px] rounded-[8px]">
-                <p class="text-white">Website</p>
-              </div>
-            </div>
-            <div class="relative">
-              <img class="w-[240px] h-[220px] object-cover rounded-[4px]" src="../src/img/img_2.png" alt="">
-              <div class="absolute left-[16px] bottom-[8px] p-[8px] rounded-[8px]">
-                <p class="text-white">Website</p>
-              </div>
-            </div>
+        </div>
+        <div class="relative">
+          <img class="w-[240px] h-[220px] object-cover rounded-[4px]" src="../src/img/img_2.png" alt="">
+          <div class="absolute left-[16px] bottom-[8px] p-[8px] rounded-[8px]">
+            <p class="text-white">Website</p>
           </div>
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="js/index.js"></script>
-  </body>
+  </div>
+</div>
+<script type="text/javascript" src="js/index.js"></script>
+</body>
 </html>
