@@ -1,0 +1,118 @@
+body {
+  @apply h-[100vh];
+  background: radial-gradient(50% 50% at 50% 50%, #2D3643 0%, #171C26 100%) no-repeat;
+}
+
+.content-logo {
+  @apply w-full h-full flex items-center justify-center absolute z-10;
+  background: radial-gradient(50% 50% at 50% 50%, #2D3643 0%, #171C26 100%) no-repeat;
+
+  -moz-animation: hidden-logo 0s ease-in 2s forwards;
+  /* Firefox */
+  -webkit-animation: hidden-logo 0s ease-in 2s forwards;
+  /* Safari and Chrome */
+  -o-animation: hidden-logo 0s ease-in 2s forwards;
+  /* Opera */
+  animation: hidden-logo 0s ease-in 2s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hidden-logo {
+  to {
+    width:0;
+    height:0;
+    overflow:hidden;
+  }
+}
+
+@-webkit-keyframes hidden-logo {
+  to {
+    width:0;
+    height:0;
+    visibility:hidden;
+  }
+}
+
+#header {
+  @apply flex justify-between;
+}
+
+#about {
+  @apply flex flex-col items-center mt-[144px];
+}
+
+#contact {
+  @apply flex justify-around hidden;
+}
+
+.contact {
+  &-title {
+    @apply text-[24px] leading-[32px] mb-[4px];
+  }
+
+  &-link {
+    @apply text-[16px] leading-[20px] text-[#D1D9DD] underline cursor-pointer;
+  }
+
+  &-value {
+    @apply text-[16px] leading-[20px] text-[#D1D9DD];
+  }
+}
+
+#success {
+  @apply flex flex-col items-center mt-[144px] space-y-[24px] hidden;
+}
+
+.form {
+  &-group {
+    @apply flex flex-col;
+  }
+
+  &-control {
+    @apply bg-transparent	;
+    border-bottom: 1px solid #D1D9DD;
+  }
+
+  &-textarea {
+    @apply rounded-[8px] bg-transparent	mt-[8px] p-[4px];
+    border: 1px solid #D1D9DD;
+  }
+
+}
+
+input:focus-visible {
+  @apply outline-0;
+}
+
+textarea:focus-visible {
+  @apply outline-0;
+}
+
+.button-custom {
+  @apply px-[28px] py-[8px] rounded-[8px] text-[20px] leading-[28px] font-medium text-white cursor-pointer;
+  background: linear-gradient(114.44deg, #1CA2D0 0.01%, #2764C7 100%);
+}
+
+.button-custom:disabled {
+  @apply opacity-50 cursor-default;
+}
+
+.required {
+  &::after {
+    @apply ml-[4px] text-[#FF6767];
+    content: '*';
+  }
+}
+
+.tab-item {
+  @apply text-[24px] leading-[32px] text-[#BCC6CC] cursor-pointer;
+}
+
+.tab-item:hover {
+  @apply text-white;
+}
+
+.tab-item.active {
+  @apply text-white;
+}
